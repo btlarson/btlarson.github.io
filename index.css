@@ -1,0 +1,149 @@
+/* T O C
+ Presets
+ Variablized Styles
+ Element Styles
+ Mobile
+ Header and Nav
+ Sections
+ Media Queries
+ */
+
+
+/* Presets */
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  position: relative;
+  margin: 0;
+  max-width: 100%;
+  height: 100%;
+
+  background: #fafafa;
+  background-color: #fafafa;
+  color: #000;
+
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+
+  text-align: center;
+}
+
+body {
+  padding: 0 20px;
+}
+
+h1, h2, h3 {
+  font-family: 'Cormorant Garamond', sans-serif;
+  font-weight: 900;
+  text-transform: capitalize;
+}
+
+b {
+  font-weight: 400;
+}
+
+/* Variablized STyles */
+
+.hidden {
+  display: none !important;
+}
+
+/* Body */
+
+nav {
+  font-family: proxima-nova;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 12px;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+a {
+  text-decoration: none;
+  pointer-events: all;
+  cursor: pointer;
+  vertical-align: middle;
+}
+
+nav a {
+  margin: 0 1em;
+  padding: .618em 0;
+  color: rgba(0,0,0,.6);
+  display: inline-block;
+  vertical-align: middle;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.top-center a {
+  font-family: futura-pt;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 25px;
+  letter-spacing: .15em;
+  line-height: 1em;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.mobile {
+  display: none;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1500px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.site, .video-banner, .tagline-banner {
+  width: 100%;
+}
+
+.tagline-banner {
+  padding: 100px 0px;
+}
+
+.tagline {
+  color: #525252;
+  font-family: futura-pt;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 35px;
+  letter-spacing: -.01em;
+  line-height: 1em;
+  text-transform: none;
+}
+
+
+
+/* Media Queries */
+
+/* Styles Applicable until Mobile Size Exceeded */
+@media (max-width: 425px) {
+  .mobile {
+    display: flex;
+  }
+}
+
+/* Styles Applicable Between mobile and tablet sizes */
+@media (min-width: 425px + 1px) and (max-width: 768px) {
+
+}
+/* Styles Applicable Beginning at Deskop Size */
+@media (min-width: 769px) {
+
+}
+/* Styles Applicable Beginning at Large Screen Size */
+@media (min-width: 1920px) {
+
+}
+
