@@ -82,14 +82,14 @@ nav a {
 }
 
 .top-left, .top-right {
- width: 265px;
+ width: 280px;
 }
 
 .top-left {
  padding-left: 50px;
 }
 
-.top-left {
+.top-right {
  padding-right: 50px;
 }
 
