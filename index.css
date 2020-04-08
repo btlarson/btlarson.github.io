@@ -76,6 +76,21 @@ nav a {
   vertical-align: middle;
   text-decoration: none;
   background-color: transparent;
+  text-transform: capitalize;
+  font-size: 1rem;
+  font-family: lato;
+}
+
+.top-left, .top-right {
+ width: 265px;
+}
+
+.top-left {
+ padding-left: 50px;
+}
+
+.top-left {
+ padding-right: 50px;
 }
 
 .top-center a {
