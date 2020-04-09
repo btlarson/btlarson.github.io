@@ -21,8 +21,8 @@ html, body {
   height: 100%;
 
   background: #fafafa;
-  background-color: #fafafa;
-  color: #000;
+  background-color: rgba(0,0,0,0.8);
+  color: rgba(28,28,28,0.9);
 
   font-family: 'Lato', sans-serif;
   font-size: 16px;
@@ -32,6 +32,7 @@ html, body {
 
 body {
   padding: 0 20px;
+  height: auto;
 }
 
 h1, h2, h3 {
@@ -71,7 +72,7 @@ a {
 nav a {
   margin: 0 1em;
   padding: .618em 0;
-  color: rgba(0,0,0,.6);
+  color: #aaa;
   display: inline-block;
   vertical-align: middle;
   text-decoration: none;
@@ -82,15 +83,23 @@ nav a {
 }
 
 .top-left, .top-right {
- width: 280px;
+ width: 400px;
 }
 
 .top-left {
+ display: flex;
+ justify-content: flex-start;
  padding-left: 50px;
 }
 
 .top-right {
+ display: flex;
+ justify-content: flex-end;
  padding-right: 50px;
+}
+
+.top-center {
+  width: 300px;
 }
 
 .top-center a {
@@ -100,7 +109,7 @@ nav a {
   font-size: 28px;
   letter-spacing: .15em;
   line-height: 1em;
-  color: #000;
+  color: #eee;
 }
 
 .mobile {
