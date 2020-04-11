@@ -18,6 +18,8 @@
     <link href="index.css" rel="stylesheet" type="text/css" />
     <title>Cellular Behavior</title>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&family=Oswald:wght@100;400;500;600;700&family=Roboto+Slab:wght@100;400;700;900&display=swap" rel="stylesheet">
+    <link href="https://vjs.zencdn.net/7.7.5/video-js.css" rel="stylesheet" />
+    <script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
   </head>
 
   <div class="mobile mobile-overlay">
@@ -82,7 +84,25 @@
 
   <div class="site">
     <div class="video-banner">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/HwdfClpL7Kc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <video
+   id="my-video"
+   class="video-js"
+   controls
+   preload="auto"
+   width="640"
+   height="264"
+   poster="MY_VIDEO_POSTER.jpg"
+   data-setup='{ "techOrder": ["youtube", "html5"], "sources": [{ "type": "video/youtube", "src": "https://youtu.be/CfrYXA6B-fM"}] }'
+ >
+   <p class="vjs-no-js">
+     To view this video please enable JavaScript, and consider upgrading to a
+     web browser that
+     <a href="https://videojs.com/html5-video-support/" target="_blank"
+       >supports HTML5 video</a
+     >
+   </p>
+ </video>
+
     </div>
     <div class="tagline-banner">
       <div class="tagline">searching for principles of cellular behavior using microscopes, math, and computation</div>
@@ -96,5 +116,8 @@
 
 
   <footer class="footer"></footer>
+<script src="https://vjs.zencdn.net/7.7.5/video.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/videojs-youtube/2.6.1/Youtube.js"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/videojs-youtube/2.6.1/Youtube.min.js"></script> -->
 </body>
 </html>
