@@ -31,7 +31,7 @@ html, body {
 }
 
 body {
-  padding: 0 20px;
+  padding: 0 0px;
   height: auto;
 }
 
@@ -142,7 +142,7 @@ nav a {
 
 .site {
  width: 100vw;
- height: 100vh;
+ height: 90vh;
  overflow: hidden;
 }
 
@@ -199,9 +199,9 @@ iframe, .vjs-poster, .html6-video-player {
 }
 
 .tagline {
-  color: #525252;
+  color: #aaa;
   font-family: lato;
-  font-weight: 600;
+  font-weight: 400;
   font-style: normal;
   font-size: 22px;
   letter-spacing: -.01em;
@@ -211,6 +211,14 @@ iframe, .vjs-poster, .html6-video-player {
 
 .social-links {
   padding-bottom: 50px;
+}
+
+.twitter-follow-button {
+  opacity: 0.9;
+}
+
+.twitter-follow-button:hover {
+  opacity: 0.5;
 }
 
 /* Media Queries */
