@@ -84,25 +84,26 @@
 
   <div class="site">
     <div class="video-banner">
-      <video
-   id="my-video"
-   class="video-js"
-   controls
-   preload="auto"
-   width="640"
-   height="264"
-   poster="MY_VIDEO_POSTER.jpg"
-   data-setup='{ "techOrder": ["youtube", "html5"], "sources": [{ "type": "video/youtube", "src": "https://youtu.be/CfrYXA6B-fM"}] }'
- >
-   <p class="vjs-no-js">
-     To view this video please enable JavaScript, and consider upgrading to a
-     web browser that
-     <a href="https://videojs.com/html5-video-support/" target="_blank"
-       >supports HTML5 video</a
-     >
-   </p>
- </video>
-
+      <div class="video-container">
+        <video
+         id="my-video"
+         class="video-js"
+         preload="auto"
+         loop
+         width="640"
+         height="264"
+         poster="MY_VIDEO_POSTER.jpg"
+         data-setup='{"loop": true, "autoplay": true, "controls": false, "techOrder": ["youtube", "html5"], "sources": [{ "type": "video/youtube", "src": "https://youtu.be/CfrYXA6B-fM"}] }'
+       >
+         <p class="vjs-no-js">
+           To view this video please enable JavaScript, and consider upgrading to a
+           web browser that
+           <a href="https://videojs.com/html5-video-support/" target="_blank"
+             >supports HTML5 video</a
+           >
+         </p>
+       </video>
+     </div>
     </div>
     <div class="tagline-banner">
       <div class="tagline">searching for principles of cellular behavior using microscopes, math, and computation</div>
