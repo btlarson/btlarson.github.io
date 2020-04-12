@@ -140,7 +140,13 @@ nav a {
   padding-bottom: 50px;
 }
 
-.site, .video-banner, .tagline-banner {
+.site {
+ width: 100vw;
+ height: 100vh;
+ overflow: hidden;
+}
+
+.video-banner, .tagline-banner {
   width: 100%;
 }
 
@@ -189,7 +195,7 @@ iframe, .vjs-poster, .html6-video-player {
 }
 
 .tagline-banner {
-  padding: 100px 0px;
+  padding: 50px 0px;
 }
 
 .tagline {
@@ -206,8 +212,6 @@ iframe, .vjs-poster, .html6-video-player {
 .social-links {
   padding-bottom: 50px;
 }
-
-
 
 /* Media Queries */
 
