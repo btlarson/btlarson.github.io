@@ -215,8 +215,12 @@ iframe, .vjs-poster, .html6-video-player {
   padding-bottom: 50px;
 }
 
-.twitter {
+.socials {
   margin-right: 1em;
+}
+
+.socials a {
+  padding: 0.5em;
 }
 
 .twitter-follow-button {
