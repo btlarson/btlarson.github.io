@@ -220,6 +220,17 @@ iframe, .vjs-poster, .html6-video-player {
 .twitter-follow-button:hover {
   opacity: 0.5;
 }
+.scholar-follow-button {
+  opacity: 0.9;
+}
+
+.scholar-follow-button:hover {
+  opacity: 0.5;
+}
+
+.twitter a{
+  padding: 2px
+}
 
 /* Media Queries */
 
