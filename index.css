@@ -242,3 +242,45 @@ iframe, .vjs-poster, .html6-video-player {
 @media (min-width: 1920px) {
 
 }
+
+/* Research Page */
+
+.research-page {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+.research-content {
+  padding: 50px;
+}
+
+.research-entries {
+  width: 55%;
+}
+
+.research-entries .head {
+  background: #cccccc;
+}
+
+.entry-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  color: #777777;
+}
+
+.entry-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.year {
+  min-width: 75px;
+}
+
+.entry-container .title {
+  color: #1a0dab;
+}
