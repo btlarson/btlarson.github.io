@@ -1,10 +1,101 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Bens Publications</title>
-  </head>
+<head>
+  <meta name="viewport" content="initial-scale=1">
+  <base href="">
+  <meta charset="utf-8">
+  <meta property="og:site_name" content="Ben Larson Publications">
+  <meta property="og:title" content="Ben Larson Publications">
+  <meta property="og:url" content="https://www.benlarson.org">
+  <meta property="og:type" content="website">
+  <meta itemprop="name" content="Ben Larson Research">
+  <meta itemprop="url" content="https://www.benlarson.org">
+  <meta name="twitter:title" content="Ben Larson Publications">
+  <meta name="twitter:url" content="https://www.benlarson.org">
+  <meta name="description" content="" />
+  <link href="index.css" rel="stylesheet" type="text/css" />
+  <title>Ben Larson Research</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&family=Oswald:wght@100;400;500;600;700&family=Roboto+Slab:wght@100;400;700;900&display=swap" rel="stylesheet">
+</head>
   <body>
-    <div>Publications</div>
+    <div class="color-banner"></div>
+    <div class="publications-page">
+      <div class="mobile mobile-overlay">
+        <div class="mobile-nav">
+          <nav class="Mobile-overlay-nav Mobile-overlay-nav--primary" data-content-field="navigation">
+            <a href="home.html" class="Mobile-overlay-nav-item">
+              Home
+            </a>
+            <a href="research.html" class="Mobile-overlay-nav-item">
+              Research
+            </a>
+            <a href="contact.html" class="Mobile-overlay-nav-item">
+              Contact
+            </a>
+          </nav>
+          <nav class="Mobile-overlay-nav Mobile-overlay-nav--secondary" data-content-field="navigation">
+            <a href="about.html" class="Mobile-overlay-nav-item">
+              About
+            </a>
+            <a href="publications.html" class="Mobile-overlay-nav-item">
+              Publications
+            </a>
+          </nav>
+        </div>
+        <button class="Mobile-overlay-close" data-controller="MobileOverlayToggle" data-controllers-bound="MobileOverlayToggle">
+          <svg class="Icon Icon--close" viewBox="0 0 16 16">
+            <use xlink:href="/assets/ui-icons.svg#close-icon"></use>
+          </svg>
+        </button>
+      </div>
+
+      <header>
+        <div class="header-container">
+          <div class="top-left">
+            <nav>
+              <div class="header-nav">
+                <a href="about.html">About</a>
+                <a href="research.html">Research</a>
+                <a href="publications.html" class="Header-nav-item" data-test="template-nav">Publications</a>
+              </div>
+            </nav>
+          </div>
+
+          <div class="top-center">
+            <a href="home.html" class="Header-branding" style="display: inline-block;">
+              Ben Larson
+            </a>
+            <div> <a href="https://scholar.google.com/citations?user=oCQbOfMAAAAJ&hl=en" target="_blank">Postdoc |</a> <a href="https://cellgeometry.ucsf.edu/" target="_blank">Marshall lab |</a> <a href="https://www.ucsf.edu/" target="_blank">UCSF</a> </div>
+          </div>
+
+          <div class="top-right">
+            <nav class="header-nav">
+              <div class="Header-nav-inner">
+
+                <a href="contact.html" class="Header-nav-item" data-test="template-nav">Contact</a>
+                <a href="gallery.html" class="Header-nav-item" data-test="template-nav">Gallery</a>
+              </div>
+            </nav>
+         </div>
+        </div>
+      </header>
+
+      <div class="publications-content">
+        <div class="publications-entries">
+          <div class="head"></div>
+          <div class="body">
+            <div class="entry-container">
+              <div class="entry-content">
+                <div class="title">Regulation of Form in Multicellular Choanoflagellates and the Evolutionary Cell Biology of Morphogenesis</div>
+                <div class="authors">Suess, Dr.</div>
+                <div class="line-2">PLoS Biology 17 (4), e3000226</div>
+              </div>
+              <div class="year">1234</div>
+            <div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
   </body>
 </html>

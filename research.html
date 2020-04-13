@@ -1,10 +1,107 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Bens Research</title>
-  </head>
+<head>
+  <meta name="viewport" content="initial-scale=1">
+  <base href="">
+  <meta charset="utf-8">
+  <meta property="og:site_name" content="Ben Larson Research">
+  <meta property="og:title" content="Ben Larson Research">
+  <meta property="og:url" content="https://www.benlarson.org">
+  <meta property="og:type" content="website">
+  <meta itemprop="name" content="Ben Larson Research">
+  <meta itemprop="url" content="https://www.benlarson.org">
+  <meta name="twitter:title" content="Ben Larson Research">
+  <meta name="twitter:url" content="https://www.benlarson.org">
+  <meta name="description" content="" />
+  <link href="index.css" rel="stylesheet" type="text/css" />
+  <title>Ben Larson Research</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&family=Oswald:wght@100;400;500;600;700&family=Roboto+Slab:wght@100;400;700;900&display=swap" rel="stylesheet">
+</head>
   <body>
-    <div>Research</div>
+    <div class="color-banner"></div>
+    <div class="research-page">
+      <div class="mobile mobile-overlay">
+        <div class="mobile-nav">
+          <nav class="Mobile-overlay-nav Mobile-overlay-nav--primary" data-content-field="navigation">
+            <a href="home.html" class="Mobile-overlay-nav-item">
+              Home
+            </a>
+            <a href="research.html" class="Mobile-overlay-nav-item">
+              Research
+            </a>
+            <a href="contact.html" class="Mobile-overlay-nav-item">
+              Contact
+            </a>
+          </nav>
+          <nav class="Mobile-overlay-nav Mobile-overlay-nav--secondary" data-content-field="navigation">
+            <a href="about.html" class="Mobile-overlay-nav-item">
+              About
+            </a>
+            <a href="publications.html" class="Mobile-overlay-nav-item">
+              Publications
+            </a>
+          </nav>
+        </div>
+        <button class="Mobile-overlay-close" data-controller="MobileOverlayToggle" data-controllers-bound="MobileOverlayToggle">
+          <svg class="Icon Icon--close" viewBox="0 0 16 16">
+            <use xlink:href="/assets/ui-icons.svg#close-icon"></use>
+          </svg>
+        </button>
+      </div>
+
+      <header>
+        <div class="header-container">
+          <div class="top-left">
+            <nav>
+              <div class="header-nav">
+                <a href="about.html">About</a>
+                <a href="research.html">Research</a>
+                <a href="publications.html" class="Header-nav-item" data-test="template-nav">Publications</a>
+              </div>
+            </nav>
+          </div>
+
+          <div class="top-center">
+            <a href="home.html" class="Header-branding" style="display: inline-block;">
+              Ben Larson
+            </a>
+            <div> <a href="https://scholar.google.com/citations?user=oCQbOfMAAAAJ&hl=en" target="_blank">Postdoc |</a> <a href="https://cellgeometry.ucsf.edu/" target="_blank">Marshall lab |</a> <a href="https://www.ucsf.edu/" target="_blank">UCSF</a> </div>
+          </div>
+
+          <div class="top-right">
+            <nav class="header-nav">
+              <div class="Header-nav-inner">
+
+                <a href="contact.html" class="Header-nav-item" data-test="template-nav">Contact</a>
+                <a href="gallery.html" class="Header-nav-item" data-test="template-nav">Gallery</a>
+              </div>
+            </nav>
+         </div>
+        </div>
+      </header>
+
+      <div class="research-container">
+      <div class="research-content">
+        <div class="left clearfix">
+          <div class="image-container">
+            <img src="protistsCompilation.jpg" />
+            <div class="caption">insert caption here</div>
+          </div>
+        </div>
+        <div class="right-and-wrap">
+          <h1>Critters</h1>
+          <div class="topic">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sagittis est eleifend eros ultricies cursus. Phasellus porttitor viverra semper. Cras at viverra nulla, sed egestas dui. Sed lectus nibh, facilisis sed ante ultricies, iaculis accumsan enim. Donec pellentesque luctus varius. Curabitur ornare posuere est, at consequat diam consectetur nec. Etiam pulvinar, massa eget fringilla iaculis, lacus mauris mattis mi, vel varius tortor massa in nibh. Vivamus porta leo eget lorem rhoncus, nec commodo libero ultrices. Pellentesque sagittis lacinia congue.
+            </p>
+            <p>
+              Pellentesque in fermentum est. Praesent ligula purus, rutrum sed purus et, efficitur mattis dui. Nulla ac nulla risus. Vivamus pretium enim quis tellus molestie auctor vel id elit. Proin pretium porta arcu pharetra mattis. Ut in arcu mattis, bibendum purus vel, tincidunt neque. Etiam in ullamcorper lectus.
+            </p>
+            <p>
+              Fusce non diam id quam aliquam mollis. Curabitur sit amet enim pretium, consectetur mi aliquam, sodales neque. Sed sit amet eleifend nunc. Sed id velit aliquet, fermentum tellus non, condimentum lorem. Donec tristique maximus augue, nec pulvinar sapien. Cras luctus lacinia ipsum, non porttitor erat lobortis vitae. Duis ullamcorper consectetur pellentesque. Nullam venenatis dui vitae congue ullamcorper. Donec eget nibh dui. Donec finibus nunc vel fringilla tempor. Vivamus a suscipit turpis. Maecenas at est ultricies, consequat mauris interdum, viverra nibh. In pulvinar felis eu quam sodales bibendum. Integer at nisi a metus semper accumsan. Donec nec eleifend lectus, sed mollis tellus. Donec nec varius risus. Donec id tristique elit. Nulla congue tellus vel ex tincidunt imperdiet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam arcu ex, mattis et volutpat eu, luctus bibendum sem.
+      </div>
+    </div>
+    </div>
+    </div>
   </body>
 </html>
