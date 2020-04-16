@@ -266,6 +266,7 @@ iframe, .vjs-poster, .html6-video-player {
 
 .research-page {
   position: relative;
+  overflow-y: scroll;
 }
 
 .research-page h1, .research-page p {
@@ -317,6 +318,7 @@ iframe, .vjs-poster, .html6-video-player {
 
 .about-page {
   position: relative;
+  overflow-y: scroll;
 }
 
 .about-page h1, .about-page p, .about-page li {
@@ -324,7 +326,7 @@ iframe, .vjs-poster, .html6-video-player {
 }
 
 .about-container {
-  width: 90%;
+  width: 100%;
   height: 100vh;
   box-sizing: border-box;
   overflow-y: scroll;
@@ -335,7 +337,7 @@ iframe, .vjs-poster, .html6-video-player {
   position: absolute;
   background: #fafafa;
   content: " ";
-  width: 175vh;
+  width: 206vh;
   height: 700px;
   top: 15%;
   left: -5%;
@@ -351,11 +353,11 @@ iframe, .vjs-poster, .html6-video-player {
 }
 
 .left .image-container {
-  margin: 0 150px 50px 0px;
+  margin: 0px 150px 50px 0px;
 }
 
 .left img {
-  height: 255px;
+  height: 295px;
   width: auto;
 }
 
