@@ -409,7 +409,7 @@ iframe, .vjs-poster, .html6-video-player {
 
 .entry-content {
   display: flex;
-  flex-direction: column;
+  flex-direction:column;
   align-items: flex-start;
   z-index: 2;
 }
