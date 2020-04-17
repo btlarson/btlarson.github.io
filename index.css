@@ -389,7 +389,8 @@ iframe, .vjs-poster, .html6-video-player {
 }
 
 .publications-content {
-  padding: 50px;
+  padding-top: 20px;
+  padding-left: 50px;
 }
 
 .publications-entries {
