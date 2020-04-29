@@ -13,144 +13,147 @@
   <meta name="twitter:title" content="About Ben Larson">
   <meta name="twitter:url" content="https://www.benlarson.org">
   <meta name="description" content="I am a postdoctoral scholar at UCSF working in Wallace Marshalls Lab of Cell Geometry. I use microscopes, math, and computation to understand how cells control shape and movement to thrive in various environments.">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"></script>
   <link href="index.css" rel="stylesheet" type="text/css" />
   <title>About Ben Larson</title>
   <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&family=Oswald:wght@100;400;500;600;700&family=Roboto+Slab:wght@100;400;700;900&display=swap" rel="stylesheet">
 </head>
   <body>
-    <div class="color-banner"></div>
-    <div class="about-page">
-      <div class="mobile">
-        <div class="mobile-header">
-          <div class="mobile-nav">
-            <button class="menu-open" type="button">
-              <svg height="32px" id="Layer_1" style="enable-background:new 0 0 32 32;" version="1.1" viewBox="0 0 32 32" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z" fill="#fff"/></svg>
-            </button>
-            <nav class="mobile-overlay-nav" data-content-field="navigation">
-              <a href="home.html" class="mobile-overlay-nav-item">
-                Home
+    <div class="about-content-container">
+      <div class="color-banner"></div>
+      <div class="about-page">
+        <div class="mobile">
+          <div class="mobile-header">
+            <div class="mobile-nav">
+              <button class="menu-open" type="button">
+                <svg height="32px" id="Layer_1" style="enable-background:new 0 0 32 32;" version="1.1" viewBox="0 0 32 32" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z" fill="#fff"/></svg>
+              </button>
+              <nav class="mobile-overlay-nav" data-content-field="navigation">
+                <a href="home.html" class="mobile-overlay-nav-item">
+                  Home
+                </a>
+                <a href="research.html" class="mobile-overlay-nav-item">
+                  Research
+                </a>
+                <a href="contact.html" class="mobile-overlay-nav-item">
+                  Contact
+                </a>
+                <a href="about.html" class="mobile-overlay-nav-item">
+                  About
+                </a>
+                <a href="publications.html" class="mobile-overlay-nav-item">
+                  Publications
+                </a>
+              </nav>
+            </div>
+            <div class="top-center">
+              <a href="home.html" class="Header-branding" style="display: inline-block;">
+                Ben Larson
               </a>
-              <a href="research.html" class="mobile-overlay-nav-item">
-                Research
-              </a>
-              <a href="contact.html" class="mobile-overlay-nav-item">
-                Contact
-              </a>
-              <a href="about.html" class="mobile-overlay-nav-item">
-                About
-              </a>
-              <a href="publications.html" class="mobile-overlay-nav-item">
-                Publications
-              </a>
-            </nav>
-          </div>
-          <div class="top-center">
-            <a href="home.html" class="Header-branding" style="display: inline-block;">
-              Ben Larson
-            </a>
-            <div>
-              <a href="about.html" target="_blank">Postdoc |</a>
-              <a href="https://cellgeometry.ucsf.edu/" target="_blank">Marshall lab |</a>
-              <a href="https://www.ucsf.edu/" target="_blank">UCSF</a>
+              <div>
+                <a href="about.html" target="_blank">Postdoc |</a>
+                <a href="https://cellgeometry.ucsf.edu/" target="_blank">Marshall lab |</a>
+                <a href="https://www.ucsf.edu/" target="_blank">UCSF</a>
+              </div>
             </div>
           </div>
+          <button class="Mobile-overlay-close" data-controller="MobileOverlayToggle" data-controllers-bound="MobileOverlayToggle">
+            <svg class="Icon Icon--close" viewBox="0 0 16 16">
+              <use xlink:href="/assets/ui-icons.svg#close-icon"></use>
+            </svg>
+          </button>
         </div>
-        <button class="Mobile-overlay-close" data-controller="MobileOverlayToggle" data-controllers-bound="MobileOverlayToggle">
-          <svg class="Icon Icon--close" viewBox="0 0 16 16">
-            <use xlink:href="/assets/ui-icons.svg#close-icon"></use>
-          </svg>
-        </button>
-      </div>
 
-      <header>
-        <div class="header-container">
-          <div class="top-left">
-            <nav>
-              <div class="header-nav">
-                <a href="about.html">About</a>
-                <a href="research.html">Research</a>
-                <a href="publications.html" class="Header-nav-item" data-test="template-nav">Publications</a>
-              </div>
-            </nav>
-          </div>
+        <header>
+          <div class="header-container">
+            <div class="top-left">
+              <nav>
+                <div class="header-nav">
+                  <a href="about.html">About</a>
+                  <a href="research.html">Research</a>
+                  <a href="publications.html" class="Header-nav-item" data-test="template-nav">Publications</a>
+                </div>
+              </nav>
+            </div>
 
-          <div class="top-center">
-            <a href="home.html" class="Header-branding" style="display: inline-block;">
-              Ben Larson
-            </a>
-            <div> <a href="https://scholar.google.com/citations?user=oCQbOfMAAAAJ&hl=en" target="_blank">Postdoc |</a> <a href="https://cellgeometry.ucsf.edu/" target="_blank">Marshall lab |</a> <a href="https://www.ucsf.edu/" target="_blank">UCSF</a> </div>
-          </div>
+            <div class="top-center">
+              <a href="home.html" class="Header-branding" style="display: inline-block;">
+                Ben Larson
+              </a>
+              <div> <a href="https://scholar.google.com/citations?user=oCQbOfMAAAAJ&hl=en" target="_blank">Postdoc |</a> <a href="https://cellgeometry.ucsf.edu/" target="_blank">Marshall lab |</a> <a href="https://www.ucsf.edu/" target="_blank">UCSF</a> </div>
+            </div>
 
-          <div class="top-right">
-            <nav class="header-nav">
-              <div class="Header-nav-inner">
+            <div class="top-right">
+              <nav class="header-nav">
+                <div class="Header-nav-inner">
 
-                <a href="contact.html" class="Header-nav-item" data-test="template-nav">Contact</a>
-                <a href="gallery.html" class="Header-nav-item" data-test="template-nav">Gallery</a>
-              </div>
-            </nav>
-         </div>
-        </div>
-      </header>
-
-      <div class="about-container">
-        <div class="about-content">
-          <div class="left clearfix">
-            <div class="image-container">
-              <img src="https://pbs.twimg.com/ext_tw_video_thumb/1221155309797826561/pu/img/BTw9vsgL4C9-ZgO0.jpg" />
-              <div class="caption">Photo by <a href="https://micromotility.com/" target="_blank">Kirsty Wan</a></div>
+                  <a href="contact.html" class="Header-nav-item" data-test="template-nav">Contact</a>
+                  <a href="gallery.html" class="Header-nav-item" data-test="template-nav">Gallery</a>
+                </div>
+              </nav>
             </div>
           </div>
-          <div class="right-and-wrap">
-            <h1>About</h1>
-            <div class="about">
-              <p>
+        </header>
+
+        <div class="about-container">
+          <div class="about-content">
+            <div class="left clearfix">
+              <div class="image-container">
+                <img src="https://pbs.twimg.com/ext_tw_video_thumb/1221155309797826561/pu/img/BTw9vsgL4C9-ZgO0.jpg" />
+                <div class="caption">Photo by <a href="https://micromotility.com/" target="_blank">Kirsty Wan</a></div>
+              </div>
+            </div>
+            <div class="right-and-wrap">
+              <h1>About</h1>
+              <div class="about">
+                <p>
                   I am a postdoc in <a href="http://cellgeometry.ucsf.edu/" target="_blank">Wallace Marshall’s lab</a> at UCSF. I use microscopes, math, computation, and sometimes a bit of fieldwork to understand how cells control shape and movement to thrive in various environments. I am particularly interested in the regulation and evolution of complex cellular function in microbial eukaryotes (protists). I work at the interface of several fields including cell biology, biophysics, and evolutionary biology.
-              </p>
-              <p>
-                While I started undergrad at <a href="https://www.reed.edu/" target="_blank">Reed College</a> planning on majoring in <a href="https://www.reed.edu/philosophy/" target="_blank">philosophy</a>, I eventually changed my plans after a course on the <a href="https://plato.stanford.edu/entries/biology-philosophy/" target="_blank">philosophy of biology</a> convinced me of the beauty and power of the conceptual tools of <a href="https://www.reed.edu/physics" target="_blank">physics</a>. After a stint in <a href="https://taraskalab.nhlbi.nih.gov/" target="
-                ">Justin Taraska’s lab</a> at the <a href="https://www.nih.gov/" target="_blank">NIH</a> doing a lot of computational image analysis, I joined the <a href="https://biophysics.berkeley.edu/" target="
-                ">Biophysics PhD Program</a> at <a href="https://www.berkeley.edu/" target="_blank">UC Berkeley</a>. There, I worked in <a href="https://kinglab.berkeley.edu/" target="_blank">Nicole King’s lab</a> on the question of how animals evolved from unicellular ancestors by studying the cellular and biophysical mechanisms regulating 3D colony shape in choanoflagellates, the closest living relatives of animals.
-              </p>
-              <p>
-                In my postdoc at UCSF, I'm trying to understand the biophysical and computational principles by which cells control behavior by studying locomotion and sensorimotor activity in ciliates and amoebae. For more on my research interests, see <a href="research.html">Research</a> and <a href="publications.html">Publications</a>.
-<p>
-  You can find a copy of my CV <a href="currentCV_Larson_2020.pdf" target= "_blank">here</a>.
-  </p>
-            </div>
-            <div class="academic-history">
-              <h2>Academic History</h2>
-              <ul>
-                <li>
-                  <div class="academic-entry">
-                    <span>PhD,</span>
-                    <a href="https://biophysics.berkeley.edu/" target="_blank">Biophysics</a>,
-                    <a href="https://www.berkeley.edu/" target="_blank">University of California, Berkeley</a>
-                  </div>
-                  <ul class="academic-entry-descriptions">
-                    <li>Advisor: <a href="https://kinglab.berkeley.edu/" target="_blank">Nicole King</a></li>
-                    <li><a href="https://ccb.berkeley.edu/academics/phd-in-computational-biology/" target="_blank">Designated emphasis in Computational and Genomic Biology</a></li>
+                </p>
+                <p>
+                  While I started undergrad at <a href="https://www.reed.edu/" target="_blank">Reed College</a> planning on majoring in <a href="https://www.reed.edu/philosophy/" target="_blank">philosophy</a>, I eventually changed my plans after a course on the <a href="https://plato.stanford.edu/entries/biology-philosophy/" target="_blank">philosophy of biology</a> convinced me of the beauty and power of the conceptual tools of <a href="https://www.reed.edu/physics" target="_blank">physics</a>. After a stint in <a href="https://taraskalab.nhlbi.nih.gov/" target="
+                  ">Justin Taraska’s lab</a> at the <a href="https://www.nih.gov/" target="_blank">NIH</a> doing a lot of computational image analysis, I joined the <a href="https://biophysics.berkeley.edu/" target="
+                  ">Biophysics PhD Program</a> at <a href="https://www.berkeley.edu/" target="_blank">UC Berkeley</a>. There, I worked in <a href="https://kinglab.berkeley.edu/" target="_blank">Nicole King’s lab</a> on the question of how animals evolved from unicellular ancestors by studying the cellular and biophysical mechanisms regulating 3D colony shape in choanoflagellates, the closest living relatives of animals.
+                </p>
+                <p>
+                  In my postdoc at UCSF, I'm trying to understand the biophysical and computational principles by which cells control behavior by studying locomotion and sensorimotor activity in ciliates and amoebae. For more on my research interests, see <a href="research.html">Research</a> and <a href="publications.html">Publications</a>.
+                  <p>
+                    You can find a copy of my CV <a href="currentCV_Larson_2020.pdf" target= "_blank">here</a>.
+                  </p>
+                </div>
+                <div class="academic-history">
+                  <h2>Academic History</h2>
+                  <ul>
+                    <li>
+                      <div class="academic-entry">
+                        <span>PhD,</span>
+                        <a href="https://biophysics.berkeley.edu/" target="_blank">Biophysics</a>,
+                        <a href="https://www.berkeley.edu/" target="_blank">University of California, Berkeley</a>
+                      </div>
+                      <ul class="academic-entry-descriptions">
+                        <li>Advisor: <a href="https://kinglab.berkeley.edu/" target="_blank">Nicole King</a></li>
+                        <li><a href="https://ccb.berkeley.edu/academics/phd-in-computational-biology/" target="_blank">Designated emphasis in Computational and Genomic Biology</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <div class="academic-entry">
+                        <span></span>
+                        <a href="https://www.mbl.edu/education/courses/physiology-modern-cell-biology/" target="_blank">Physiology Course</a>,
+                        <a href="https://www.mbl.edu/" target="_blank">Marine Biological Laboratory</a>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="academic-entry">
+                        <span>BA,</span>
+                        <a href="https://www.reed.edu/physics/" target="_blank">Physics</a>,
+                        <a href="https://www.reed.edu/" target="_blank">Reed College</a>
+                      </div>
+                    </li>
                   </ul>
-                </li>
-                <li>
-                  <div class="academic-entry">
-                    <span></span>
-                    <a href="https://www.mbl.edu/education/courses/physiology-modern-cell-biology/" target="_blank">Physiology Course</a>,
-                    <a href="https://www.mbl.edu/" target="_blank">Marine Biological Laboratory</a>
-                  </div>
-                </li>
-                <li>
-                  <div class="academic-entry">
-                    <span>BA,</span>
-                    <a href="https://www.reed.edu/physics/" target="_blank">Physics</a>,
-                    <a href="https://www.reed.edu/" target="_blank">Reed College</a>
-                  </div>
-                </li>
-              </ul>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-      <div>
+            <div>
+            </div>
     </div>
   </body>
 </html>

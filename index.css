@@ -15,10 +15,7 @@
 }
 
 html, body {
-  position: relative;
   margin: 0;
-  max-width: 100%;
-  height: 100%;
 
   background: #fafafa;
   background-color: rgba(0,0,0,0.8);
@@ -28,11 +25,12 @@ html, body {
   font-size: 13px;
 
   text-align: center;
+
+  box-sizing: border-box;
 }
 
 body {
   padding: 0 0px;
-  height: auto;
 }
 
 h1, h2, h3 {
@@ -43,6 +41,11 @@ h1, h2, h3 {
 
 b {
   font-weight: 400;
+}
+
+p a, li a, .caption a {
+  display: inline-block;
+  margin-top: -3px;
 }
 
 /* Variablized STyles */
@@ -147,7 +150,6 @@ nav a {
 
 .site {
  width: 100vw;
- height: 90vh;
  overflow: hidden;
 }
 
@@ -272,7 +274,8 @@ iframe, .vjs-poster, .html6-video-player {
   background: #fff;
   text-align: left;
   padding: 0 5px 5px;
-  z-index: 1;
+  box-shadow: rgba(0,0,0,0.172549) 0 6px 12px 0;
+  z-index: 10;
 }
 
 /* Media Queries */
@@ -294,7 +297,7 @@ iframe, .vjs-poster, .html6-video-player {
 }
 
 /* Styles Applicable Between mobile and tablet sizes */
-@media (min-width: 425px + 1px) and (max-width: 768px) {
+@media (min-width: 425px + 1px) and (max-width: 767px) {
   .mobile {
     display: flex;
   }
@@ -304,8 +307,14 @@ iframe, .vjs-poster, .html6-video-player {
   }
 }
 /* Styles Applicable Beginning at Deskop Size */
-@media (min-width: 769px) {
+@media (min-width: 768px) {
+  .header-container {
+    padding: 1.5rem 0;
+  }
 
+  nav a {
+    font-size: 0.8rem;
+  }
 }
 /* Styles Applicable Beginning at Large Screen Size */
 @media (min-width: 1920px) {
@@ -314,6 +323,10 @@ iframe, .vjs-poster, .html6-video-player {
 
 
 /* Research Page */
+
+.research-page-container .site {
+  width: auto;
+}
 
 .research-page {
   position: relative;
@@ -324,9 +337,25 @@ iframe, .vjs-poster, .html6-video-player {
   text-align: left;
 }
 
+@media (min-width: 425px) {
+  .research-page-container .color-banner {
+    height: 600vh;
+  }
+}
+}
+
+@media (min-width: 768px) {
+  .research-page-container .color-banner {
+    height: 280vh;
+  }
+}
+
+.research-page-container .color-banner {
+  height: 160vh;
+}
+
 .research-container {
   width: 90%;
-  height: 100vh;
   box-sizing: border-box;
   overflow-y: scroll;
   margin: 0 50px;
@@ -345,7 +374,7 @@ iframe, .vjs-poster, .html6-video-player {
 }
 
 .left .image-container {
-  margin: 0 150px 50px 0px;
+  margin: 0 75px 15px 0px;
 }
 
 .left img {
@@ -377,8 +406,6 @@ iframe, .vjs-poster, .html6-video-player {
 }
 
 .about-container {
-  width: 100%;
-  height: 100vh;
   box-sizing: border-box;
   overflow-y: scroll;
   margin: 0 50px;
@@ -388,23 +415,18 @@ iframe, .vjs-poster, .html6-video-player {
   position: absolute;
   background: #fafafa;
   content: " ";
-  width: 206vh;
-  height: 700px;
+  width: 100vw;
+  height: 80vh;
   top: 15%;
-  left: -5%;
+  right: 0;
 }
 
 .about-content {
   z-index: 1;
-  width: 150vh;
 }
 
 .left {
   float: left;
-}
-
-.left .image-container {
-  margin: 0px 150px 50px 0px;
 }
 
 .left img {
@@ -423,19 +445,57 @@ iframe, .vjs-poster, .html6-video-player {
   display: table;
 }
 
+.caption {
+  font-style: italic;
+  font-weight: 100;
+}
+
 .academic-history {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
 
+@media (max-width: 425px) {
+  .about-content-container .color-banner {
+    height: 192vh;
+  }
+
+  .about-container {
+      margin: 35px 10px 0;
+  }
+
+  .clearfix {
+    display: inherit;
+  }
+
+  .left {
+    float: none;
+  }
+
+  .image-container {
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .about-content-container .color-banner {
+    height: 100vh;
+  }
+
+  .image-container {
+    margin-right: 35px;
+  }
+
+  .about-container {
+      margin: 0 25px;
+  }
+}
+
 /* Publications Page */
 
 .publications-page {
-  position: relative;
-  width: 100vw;
-  height: 124vh;
-  overflow-y: scroll;
+  padding-top: 25px;
 }
 
 .publications-content {
@@ -450,6 +510,7 @@ iframe, .vjs-poster, .html6-video-player {
 .publications-entries .head {
   background: #cccccc;
 }
+
 
 .entry-container {
   display: flex;
@@ -471,4 +532,22 @@ iframe, .vjs-poster, .html6-video-player {
 
 .entry-container .title {
   color: #1a0dab;
+}
+
+@media (max-width: 425px) {
+  .publications-content-container .color-banner {
+    height: 140vh;
+  }
+  
+  .publications-content {
+    padding: 10px;
+  }
+
+  .publications-entries {
+    width: 100%;
+  }
+
+  .year {
+    z-index: 1;
+  }
 }
