@@ -69,6 +69,11 @@ a {
   vertical-align: middle;
 }
 
+button {
+  pointer-events: all;
+  cursor: pointer;
+}
+
 nav a {
   margin: 0 1em;
   padding: .618em 0;
@@ -239,6 +244,37 @@ iframe, .vjs-poster, .html6-video-player {
   opacity: 0.5;
 }
 
+/* Mobile Styles */
+.mobile-header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 3%;
+}
+
+.mobile-overlay-nav {
+  display: none;
+}
+
+.mobile-nav {
+  position: relative;
+}
+
+.mobile-nav:hover .mobile-overlay-nav {
+  display: flex;
+}
+
+.mobile-overlay-nav {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  flex-direction: column;
+  background: #fff;
+  text-align: left;
+  padding: 0 5px 5px;
+  z-index: 1;
+}
+
 /* Media Queries */
 
 /* Styles Applicable until Mobile Size Exceeded */
@@ -246,11 +282,26 @@ iframe, .vjs-poster, .html6-video-player {
   .mobile {
     display: flex;
   }
+
+  header {
+    display: none;
+  }
+
+  .tagline-banner {
+    padding: 7% 0;
+    font-size: 18px;
+  }
 }
 
 /* Styles Applicable Between mobile and tablet sizes */
 @media (min-width: 425px + 1px) and (max-width: 768px) {
+  .mobile {
+    display: flex;
+  }
 
+  header {
+    display: none;
+  }
 }
 /* Styles Applicable Beginning at Deskop Size */
 @media (min-width: 769px) {
@@ -371,7 +422,6 @@ iframe, .vjs-poster, .html6-video-player {
   clear: both;
   display: table;
 }
-
 
 .academic-history {
   display: flex;
