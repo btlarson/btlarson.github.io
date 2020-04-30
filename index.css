@@ -351,7 +351,7 @@ iframe, .vjs-poster, .html6-video-player {
 }
 
 .research-page-container .color-banner {
-  height: 160vh;
+  height: 220vh;
 }
 
 .research-container {
@@ -416,7 +416,7 @@ iframe, .vjs-poster, .html6-video-player {
   background: #fafafa;
   content: " ";
   width: 100vw;
-  height: 80vh;
+  height: 110vh;
   top: 15%;
   right: 0;
 }
@@ -495,7 +495,7 @@ iframe, .vjs-poster, .html6-video-player {
 /* Publications Page */
 
 .publications-page {
-  padding-top: 25px;
+  position: relative;
 }
 
 .publications-content {
@@ -521,7 +521,7 @@ iframe, .vjs-poster, .html6-video-player {
 
 .entry-content {
   display: flex;
-  flex-direction:column;
+  flex-direction: column;
   align-items: flex-start;
   z-index: 2;
 }
@@ -538,7 +538,7 @@ iframe, .vjs-poster, .html6-video-player {
   .publications-content-container .color-banner {
     height: 140vh;
   }
-  
+
   .publications-content {
     padding: 10px;
   }
