@@ -366,7 +366,14 @@ iframe, .vjs-poster, .html6-video-player {
 }
 
 .entry-container .title {
-  color: #1a0dab;
+  color: #777777;
+
+}
+
+.footnote i {
+  font-size: 0.8rem;
+  font-weight: 300;
+  font-style: italic;
 }
 
 .left {
@@ -494,17 +501,20 @@ iframe, .vjs-poster, .html6-video-player {
 
 /* Publications Page */
 
-.publications-page {
-  position: relative;
+.publications-content-container h1 {
+  text-align: left;
+  font-weight: 400;
 }
 
 .publications-content {
+  padding: 20px 50px 50px 0;
   padding-top: 20px;
   padding-left: 50px;
+  background: #fafafa;
 }
 
 .publications-entries {
-  width: 55%;
+  width: auto;
 }
 
 .publications-entries .head {
@@ -517,6 +527,8 @@ iframe, .vjs-poster, .html6-video-player {
   justify-content: space-between;
   flex-wrap: nowrap;
   color: #777777;
+  width: 100%;
+  margin: 1rem 0;
 }
 
 .entry-content {
@@ -526,18 +538,12 @@ iframe, .vjs-poster, .html6-video-player {
   z-index: 2;
 }
 
-.year {
-  min-width: 75px;
-}
 
 .entry-container .title {
-  color: #1a0dab;
+  color: #777777;
 }
 
 @media (max-width: 425px) {
-  .publications-content-container .color-banner {
-    height: 140vh;
-  }
 
   .publications-content {
     padding: 10px;
@@ -548,6 +554,6 @@ iframe, .vjs-poster, .html6-video-player {
   }
 
   .year {
-    z-index: 1;
+    z-index: 3;
   }
 }
