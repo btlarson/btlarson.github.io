@@ -290,9 +290,9 @@ iframe, .vjs-poster, .html6-video-player {
 }
 
 .gallery-image-container img {
-  min-width: 100%;
   min-height: 100%;
-  max-width: 200%;
+  min-width: 100%;
+  max-width: 115%;
   height: auto;
   object-fit: cover;
 }
@@ -487,6 +487,8 @@ iframe, .vjs-poster, .html6-video-player {
 
 .about-content {
   z-index: 1;
+  background: #fafafa;
+  padding: 70px;
 }
 
 .left {
@@ -520,10 +522,9 @@ iframe, .vjs-poster, .html6-video-player {
   align-items: flex-start;
 }
 
-@media (max-width: 425px) {
-  .about-content-container .color-banner {
-    height: 192vh;
-  }
+.academic-history li {
+  margin-bottom: 15px;
+}
 
   .about-container {
       margin: 35px 10px 0;
