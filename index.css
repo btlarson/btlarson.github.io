@@ -301,6 +301,7 @@ iframe, .vjs-poster, .html6-video-player {
 .gallery-caption {
   color: #fafafa;
   padding: 1rem 0;
+  font-weight: 300;
 }
 
 /* Mobile Styles */
@@ -429,8 +430,16 @@ iframe, .vjs-poster, .html6-video-player {
 
 .footnote i {
   font-size: 0.8rem;
-  font-weight: 300;
+  font-weight: 400;
   font-style: italic;
+}
+
+.line-3 {
+  font-size: 0.9rem;
+  padding-top: 5px;
+}
+.line-4 {
+  font-size: 0.9rem;
 }
 
 .left {
@@ -447,6 +456,24 @@ iframe, .vjs-poster, .html6-video-player {
 }
 
 .left .caption {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.right {
+  float: right;
+}
+
+.right .image-container {
+  margin: 20px 20px 15px 15px;
+}
+
+.right img {
+  height: 255px;
+  width: auto;
+}
+
+.right .caption {
   text-align: center;
   margin: 0 auto;
 }
@@ -523,7 +550,8 @@ iframe, .vjs-poster, .html6-video-player {
 }
 
 .academic-history li {
-  margin-bottom: 15px;
+  margin-bottom: 10px;
+  margin-top: 8px
 }
 
   .about-container {
@@ -535,7 +563,7 @@ iframe, .vjs-poster, .html6-video-player {
   }
 
   .left {
-    float: none;
+    float: left;
   }
 
   .image-container {
