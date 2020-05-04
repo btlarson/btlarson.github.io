@@ -246,6 +246,14 @@ iframe, .vjs-poster, .html6-video-player {
   opacity: 0.5;
 }
 
+.cv-button {
+  opacity: 0.9;
+}
+
+.cv-button:hover {
+  opacity: 0.5;
+}
+
 /* Gallery */
 
 .gallery-page {
@@ -447,7 +455,7 @@ iframe, .vjs-poster, .html6-video-player {
 }
 
 .left .image-container {
-  margin: 0 75px 15px 0px;
+  margin: 0 25px 5px 0px;
 }
 
 .left img {
