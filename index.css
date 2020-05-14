@@ -178,12 +178,23 @@ nav a {
   height: 1000px;
 }
 
-iframe, .vjs-poster, .html6-video-player {
+iframe, .html6-video-player {
   position: absolute;
   top: -25% !important;
   left: -65% !important;
 
   width: 330% !important;
+  height: 95% !important;
+
+  object-fit: cover;
+}
+
+.vjs-poster{
+  position: absolute;
+  top: -25% !important;
+  left: 12% !important;
+
+  width: 175% !important;
   height: 95% !important;
 
   object-fit: cover;
@@ -446,7 +457,7 @@ iframe, .vjs-poster, .html6-video-player {
 }
 
 .research-content {
-  padding: 16px 35px 0;
+  padding: 16px 5px 0;
 }
 
 .entry-container .title {
@@ -488,6 +499,7 @@ iframe, .vjs-poster, .html6-video-player {
 
 .right {
   float: right;
+  padding-top: 35px;
 }
 
 .right .image-container {
@@ -560,6 +572,11 @@ iframe, .vjs-poster, .html6-video-player {
   display: flex;
   align-items: baseline;
 }
+
+.contact-content .image-container .caption {
+  display: flex;
+  display: contents;
+ }
 
 .contact-content .image-container img {
   width: 100%;
