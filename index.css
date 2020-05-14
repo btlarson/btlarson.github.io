@@ -197,7 +197,7 @@ iframe, .html6-video-player {
   width: 175% !important;
   height: 95% !important;
 
-  object-fit: cover;
+  /* object-fit: cover; */
 }
 
 .video-container video {
@@ -775,11 +775,11 @@ iframe, .html6-video-player {
 
 .image-container.absolute {
   position: absolute;
-  top: 10.5vh;
+  top: 15.5vh;
   left: 62vw;
 
-  width: 105px;
-  height: 150px;
+  width: 115px;
+  height: 164px;
 
   background: #000;
 
