@@ -200,6 +200,10 @@ iframe, .html6-video-player {
   /* object-fit: cover; */
 }
 
+.video-js.vjs-has-started .vjs-poster {
+  display: none;
+}
+
 .video-container video {
   position: absolute;
   top: 0 !important;
