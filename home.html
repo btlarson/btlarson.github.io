@@ -137,7 +137,7 @@
    function bannerRemover(myVideo) {
       var myPlayer = videojs(myVideo);
       myPlayer.on('play', function() {
-        myPlayer.poster('blank.jpg');
+        myPlayer.poster('none');
       });
    };
    document.onload = bannerRemover('my-video');
