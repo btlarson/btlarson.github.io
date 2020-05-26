@@ -202,7 +202,7 @@ iframe, .html6-video-player {
 }
 
 .video-js.vjs-has-started .vjs-poster {
-  display: none;
+  display: none !important;
 }
 
 .video-container video {
