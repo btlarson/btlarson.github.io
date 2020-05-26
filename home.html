@@ -136,6 +136,7 @@
 <script type="text/javascript">
    function bannerRemover(myVideo) {
       var myPlayer = videojs(myVideo);
+      myPlayer.play();
       myPlayer.on('play', function() {
         myPlayer.poster('none');
       });

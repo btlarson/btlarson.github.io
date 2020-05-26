@@ -205,10 +205,6 @@ iframe, .html6-video-player {
   display: none !important;
 }
 
-.video-js.vjs-is-playing .vjs-poster {
-  display: none !important;
-}
-
 .video-container video {
   position: absolute;
   top: 0 !important;
