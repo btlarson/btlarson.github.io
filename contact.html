@@ -1,21 +1,61 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+
 <head>
+  <script type="text/javascript">
+
+function initialize() {
+
+  var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
+
+  // Resize stuff...
+  google.maps.event.addDomListener(window, "resize", function() {
+    var center = map.getCenter();
+    google.maps.event.trigger(map, "resize");
+    map.setCenter(center);
+  });
+
+}
+
+</script>
+  <style>
+  .contact-iframe-container {
+  position: relative;
+  display: inline-block;
+  width: 80%;
+  height: 60%;
+  padding: 18%;
+  overflow: hidden;
+}
+.contact-iframe-container iframe {
+  position: absolute;
+  display: flex;
+  object-fit: contain !important;
+  border: 0 !important;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: -120% !important;
+  right: 0;
+  bottom: 0;
+}
+</style>
+
   <meta name="viewport" content="initial-scale=1">
   <base href="">
   <meta charset="utf-8">
-  <meta property="og:site_name" content="Contact Ben Larson">
-  <meta property="og:title" content="Contact Ben Larson">
+  <meta property="og:site_name" content="Contact">
+  <meta property="og:title" content="Contact">
   <meta property="og:url" content="https://www.benlarson.org/contact">
   <meta property="og:type" content="website">
-  <meta itemprop="name" content="Contact Ben Larson">
+  <meta itemprop="name" content="Contact">
   <meta itemprop="url" content="https://www.benlarson.org/contact">
-  <meta name="twitter:title" content="Contact Ben Larson">
+  <meta name="twitter:title" content="Contact">
   <meta name="twitter:url" content="https://www.benlarson.org/contact">
-  <meta name="description" content="I am a postdoctoral scholar at UCSF working in Wallace Marshalls Lab of Cell Geometry. I use microscopes, math, and computation to understand how cells control shape and movement to thrive in various environments.">
+  <meta name="description" content="Larson lab contact">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"></script>
   <link href="index.css" rel="stylesheet" type="text/css" />
-  <title>Contact Ben Larson</title>
+  <title>Contact</title>
   <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700&family=Oswald:wght@100;300;400;500;600;700&family=Roboto+Slab:wght@100;300;400;700;900&display=swap" rel="stylesheet">
 </head>
   <body>
@@ -29,31 +69,40 @@
               </button>
               <nav class="mobile-overlay-nav" data-content-field="navigation">
                 <a href="home.html" class="mobile-overlay-nav-item">
-                  Home
+                  HOME
                 </a>
+                <!--
                 <a href="about.html" class="mobile-overlay-nav-item">
-                  About
+                  ABOUT
                 </a>
+              -->
                 <a href="research.html" class="mobile-overlay-nav-item">
-                  Research
+                  RESEARCH
                 </a>
                 <a href="publications.html" class="mobile-overlay-nav-item">
-                  Publications
+                  PUBLICATIONS
+                </a>
+                <a href="team.html" class="Header-nav-item" data-test="template-nav">
+                  TEAM</a>
                 </a>
                 <a href="contact.html" class="mobile-overlay-nav-item">
-                  Contact
+                  CONTACT
+                </a>
+                <a href="gallery.html" class="mobile-overlay-nav-item">
+                  GALLERY
                 </a>
               </nav>
             </div>
             <div class="top-center">
               <a href="home.html" class="Header-branding" style="display: inline-block;">
-                Ben Larson
+                LARSON LAB @ RPI
               </a>
-              <div>
+              <!-- <div>
                 <a href="about.html" target="_blank">Postdoc |</a>
                 <a href="https://cellgeometry.ucsf.edu/" target="_blank">Marshall lab |</a>
                 <a href="https://www.ucsf.edu/" target="_blank">UCSF</a>
               </div>
+            -->
             </div>
           </div>
           <button class="Mobile-overlay-close" data-controller="MobileOverlayToggle" data-controllers-bound="MobileOverlayToggle">
@@ -68,41 +117,45 @@
             <div class="top-left">
               <nav>
                 <div class="header-nav">
-                  <a href="about.html">About</a>
-                  <a href="research.html">Research</a>
-                  <a href="publications.html" class="Header-nav-item" data-test="template-nav">Publications</a>
+                  <a href="home.html">HOME</a>
+                  <a href="research.html">RESEARCH</a>
+                  <a href="publications.html" class="Header-nav-item" data-test="template-nav">PUBLICATIONS</a>
                 </div>
               </nav>
             </div>
 
             <div class="top-center">
               <a href="home.html" class="Header-branding" style="display: inline-block;">
-                Ben Larson
-              </a>
-              <div> <a href="https://scholar.google.com/citations?user=oCQbOfMAAAAJ&hl=en" target="_blank">Postdoc |</a> <a href="https://cellgeometry.ucsf.edu/" target="_blank">Marshall lab |</a> <a href="https://www.ucsf.edu/" target="_blank">UCSF</a> </div>
+                LARSON LAB @ RPI
+                          </a>
+                <!--
+              <div> <a href="about.html" target="_blank">Postdoc |</a> <a href="https://cellgeometry.ucsf.edu/" target="_blank">Marshall lab |</a> <a href="https://www.ucsf.edu/" target="_blank">UCSF</a> </div>
+                -->
             </div>
 
             <div class="top-right">
               <nav class="header-nav">
                 <div class="Header-nav-inner">
-
-                  <a href="contact.html" class="Header-nav-item" data-test="template-nav">Contact</a>
-                  <a href="gallery.html" class="Header-nav-item" data-test="template-nav">Gallery</a>
+                  <a href="team.html" class="Header-nav-item" data-test="template-nav">TEAM</a>
+                  <a href="contact.html" class="Header-nav-item" data-test="template-nav">CONTACT</a>
+                  <a href="gallery.html" class="Header-nav-item" data-test="template-nav">GALLERY</a>
                 </div>
               </nav>
-            </div>
+           </div>
           </div>
         </header>
 
-        <div class="contact-container">
+        <div class="contact-content-container">
+          <div class="contact-page">
+          <div class="contact-container">
           <div class="contact-content">
-            <h1>Contact Ben Larson</h1>
-            <div class="image-container">
-              <img src="https://pbs.twimg.com/ext_tw_video_thumb/1221155309797826561/pu/img/BTw9vsgL4C9-ZgO0.jpg" />
+            <h1>Contact</h1>
+            <div class="contact-iframe-container">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d46645.37922921283!2d-73.77676326920005!3d42.73336180046464!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89de0f0abeddaa67%3A0x30f555881875d384!2sCenter%20for%20Biotechnology%20and%20Interdisciplinary%20Studies%20(CBIS)!5e1!3m2!1sen!2sus!4v1727830833739!5m2!1sen!2sus" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
               <!-- <div class="caption">Photo by <a href="https://micromotility.com/" target="_blank">Kirsty Wan</a></div> -->
-            </div>
+          </div>
             <p class="note">
-              If you would like to drop by to chat, my desk and bench are in the <a href="https://www.ucsf.edu/" target="_blank">Marshall Lab</a> (room N376) in Genentech Hall at UCSF Mission Bay. [<i>Photo by <a href="https://micromotility.com/" target="_blank">Kirsty Wan</a></i>]
+              If you are interested in our work or in joining the lab in any capacity, please feel free to send an email or drop by to chat.
             </p>
             <div class="contact-items">
               <div class="email contact-item">
@@ -113,11 +166,11 @@
                 </div>
                 <div class="label">Email</div>
                 <div class="content">
-                  <span>Benjamin.</span><span>Larson<span>@UCSF.edu</span>
+                  <span>larsob3</span>@rpi.edu</span>
                 </div>
               </div>
               <div class="location contact-item">
-                <a href="https://www.google.com/maps/place/Genentech+Hall/@37.7672993,-122.3946575,17z/data=!3m1!4b1!4m5!3m4!1s0x808f7fcf22c08705:0xeaa83e6b468eddf1!8m2!3d37.7672951!4d-122.3924635" target="_blank">
+                <a href="https://www.google.com/maps/place/Center+for+Biotechnology+and+Interdisciplinary+Studies+(CBIS)/@42.7282589,-73.6809762,676m/data=!3m3!1e3!4b1!5s0x89de0f0a94f8816f:0x3db1bd05837d51a8!4m6!3m5!1s0x89de0f0abeddaa67:0x30f555881875d384!8m2!3d42.728255!4d-73.6784013!16s%2Fm%2F02692gk?entry=ttu&g_ep=EgoyMDI0MDkyNS4wIKXMDSoASAFQAw%3D%3D" target="_blank">
                 <div class="circle">
                   <div class="image-container">
                     <img src="pngwing.com.png" />
@@ -125,7 +178,7 @@
                 </div>
                 </a>
                 <div class="label">Location</div>
-                <div class="content">600 16th St., San Francisco, CA</div>
+                <div class="content">1623 15th Street, Troy, NY</div>
               </div>
               <div class="twitter contact-item">
                 <a href="https://twitter.com/BEuplotes?ref_src=twsrc%5Etfw" target="_blank">
