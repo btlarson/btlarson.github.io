@@ -774,7 +774,7 @@ iframe, .html6-video-player {
   top: 46.5vh;
 }
 
-.image-container.absolute.plos .caption {
+.image-container.absolute.plos.caption {
   font-size: 9px;
   font-weight: 300;
   line-height: 1.5;
