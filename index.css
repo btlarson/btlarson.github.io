@@ -774,6 +774,9 @@ iframe, .html6-video-player {
   top: 46.5vh;
 }
 
+.image-container.absolute.pnas {
+  z-index: -1
+}
 
 .image-container.absolute.plos.caption {
   font-size: 9px;
