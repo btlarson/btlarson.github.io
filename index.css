@@ -771,6 +771,10 @@ iframe, .html6-video-player {
 }
 
 .image-container.absolute.plos {
+  top: 93vh;
+}
+
+.image-container.absolute.science {
   top: 46.5vh;
 }
 
