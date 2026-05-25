@@ -747,7 +747,7 @@ iframe, .html6-video-player {
 
 .image-container.absolute {
   position: absolute;
-  top: 15.5vh;
+  top: 0vh;
   left: 62vw;
 
   width: 115px;
@@ -775,6 +775,7 @@ iframe, .html6-video-player {
 }
 
 .image-container.absolute.science {
+  top: 23vh;
 }
 
 .image-container.absolute.pnas {
